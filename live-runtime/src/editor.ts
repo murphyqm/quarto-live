@@ -214,6 +214,7 @@ abstract class ExerciseEditor {
     dom.setAttribute("role", "button");
     dom.setAttribute("aria-label", spec.text);
     label.className = "btn-label-exercise-editor";
+    label.setAttribute("tabindex", "0");
     label.innerText = spec.text;
     dom.innerHTML = icons[spec.icon];
     dom.appendChild(label);
